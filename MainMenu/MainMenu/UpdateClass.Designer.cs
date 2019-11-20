@@ -1,6 +1,6 @@
 ﻿namespace MainMenu
 {
-    partial class IndexClass
+    partial class UpdateClass
     {
         /// <summary>
         /// Required designer variable.
@@ -41,14 +41,14 @@
             this.txtDescription.Location = new System.Drawing.Point(115, 125);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(142, 20);
-            this.txtDescription.TabIndex = 11;
+            this.txtDescription.TabIndex = 17;
             // 
             // txtClassName
             // 
             this.txtClassName.Location = new System.Drawing.Point(115, 86);
             this.txtClassName.Name = "txtClassName";
             this.txtClassName.Size = new System.Drawing.Size(142, 20);
-            this.txtClassName.TabIndex = 10;
+            this.txtClassName.TabIndex = 16;
             // 
             // lbDescription
             // 
@@ -56,7 +56,7 @@
             this.lbDescription.Location = new System.Drawing.Point(27, 125);
             this.lbDescription.Name = "lbDescription";
             this.lbDescription.Size = new System.Drawing.Size(60, 13);
-            this.lbDescription.TabIndex = 9;
+            this.lbDescription.TabIndex = 15;
             this.lbDescription.Text = "Description";
             // 
             // lbClassName
@@ -65,7 +65,7 @@
             this.lbClassName.Location = new System.Drawing.Point(27, 94);
             this.lbClassName.Name = "lbClassName";
             this.lbClassName.Size = new System.Drawing.Size(70, 13);
-            this.lbClassName.TabIndex = 8;
+            this.lbClassName.TabIndex = 14;
             this.lbClassName.Text = "Class\'s Name";
             // 
             // btnSave
@@ -73,7 +73,7 @@
             this.btnSave.Location = new System.Drawing.Point(115, 151);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 7;
+            this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
@@ -82,11 +82,11 @@
             this.btnCancel.Location = new System.Drawing.Point(33, 151);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 6;
+            this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // IndexClass
+            // UpdateClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -97,8 +97,8 @@
             this.Controls.Add(this.lbClassName);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
-            this.Name = "IndexClass";
-            this.Text = "IndexClass";
+            this.Name = "UpdateClass";
+            this.Text = "UpdateClass";
             this.ResumeLayout(false);
             this.PerformLayout();
 

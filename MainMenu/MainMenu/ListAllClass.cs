@@ -34,19 +34,39 @@ namespace MainMenu
             {
                 var @class = (Class)this.grdAllClass.SelectedRows[0].DataBoundItem;
 
-                //var UpdateForm = new Update_Class_Form(@class.ID);
+                var UpdateForm = new UpdateClass(@class.ID);
+                UpdateForm.ShowDialog();
+                this.ListAllClass_Load();
               
             }
         }
 
+        private void ListAllClass_Load()
+        {
+            var classes = this.Business.Getclass();
+            this.grdAllClass.DataSource = classes;
+
+        }
+
         void btnDelete_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if(this.grdAllClass.SelectedRows.Count == 1)
+            {
+                if (MessageBox.Show("delete?", "confirm",MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    var @class = (Class)this.grdAllClass.SelectedRows[0].DataBoundItem;
+                    this.Business.DeleteClass(@class.ID);
+                    MessageBox.Show("delete");
+                    this.ListAllClass_Load();
+                }
+            }
         }
 
         void btnAdd_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var createForm = new IndexClass();
+            createForm.ShowDialog();
+            this.ListAllClass_Load();
         }
 
         void ListAllClass_Load(object sender, EventArgs e)
